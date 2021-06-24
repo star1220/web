@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <title>水果商店</title>
+</head>
+<body>                      
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">商务控制台</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" 
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="navbar-var d-flex">
+            <a class="nav-item nav-link active" href="index.html">首页 <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="table.html">列表</a>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-4 main">
+        <div class="row">
+            <div class="col-lg-3 col-6">
+                <!--在较大的空间就用col-6 50%的宽 较小col-3_25%-->
+                <div class="card rounded-0 h-100">
+                    <!--rounded-0框的圆角变直角https://getbootstrap.com/docs/40./utilties/border/-->
+                    <!--用card把内容包起来-->
+                    <!--.card emmt <div class="card"></div>-->
+                    <div class="card-body d-flex align-items-center">
+                        <!--text-center水平置中-->
+                        <!--card-body外框-->
+                        <div class="far fa-money-bill-alt fa-4x text-success mr-2 d-none d-sm-blk"></div>
+
+                        <div class="text-center w-100">
+                            <!--text-center水平置中 w=100 https://getbootstrap.com/docs/40./utilties/sizing/-->
+                            <div class="h5">今日营收</div>
+                            <div class="h3">192,000元</div>
+                        </div>
+     
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-6">
+                <div class="card rounded-0 h-100">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="fas fa-user-friends fa-4x text-primary mr-2"></div>
+
+                        <div class="text-center w-100">
+                            <h5>会员增加</h5>
+                            <h3 class="display-4">172人</h3>
+                            <!--display-4换成更大的字-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-6">
+                <div class="card rounded-0">
+                    <div class="card-body d-flex">
+                        <div class="fas fa-id-card fa-4x text-primary mr-2"></div>
+
+                        <div class="text-center w-100">
+                            <h5>订单数</h5>
+                            <h3 class="display-4">320单</h3>
+                        </div>
+                    </div>
+                </div>             
+            </div>
+
+            <div class="col-lg-3 col-6">
+                <div class="card rounded-0">
+                    <div class="card-body d-flex">
+                        <div class="fas fa-id-card fa-4x text-primary mr-2"></div>
+
+                        <div class="text-center w-100">
+                            <h5>待出货数</h5>
+                            <h3 class="display-4">120件</h3>
+                        </div>
+                    </div>
+                </div>             
+            </div>
+        </div>
+    </div>
+
+ <section class="container-fluid mt-4">
+     <div class="row mb-5">
+         <div class="col-lg-4">
+             <div class="card h-100">
+                 <div class="card-body d-flex align-items-center">
+                     <div class="text-center w-100">
+                         <div class="h5">目标线上人数</div>
+                         <div class="h3" style="font-size: 60px">99人</div>
+                         <div class="progress">
+                             <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30"
+                                  aria-valuemin="0" aria-valuemax="100">桌柵</div>
+                             <div class="progress-bar bg-success" role="progressbar" style="width: 70%"
+                                 aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">行动装置</div>               
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="col-lg-8">
+             <div class="card h-100">
+                 <div class="card-header bg-dark text-light" style="font-weight: bold;">
+                    新进订单
+                 </div>
+                 <div class="card-body">
+                     <div class="text-right">
+                         <a href="#" class="btn btn-outline-success">订单管理</a>
+                     </div>
+                     <table class="table table-dark">
+                         <thead>
+                             <tr>
+                                 <th scope="col">来源</th>
+                                 <th scope="col">姓名</th>
+                                 <th scope="col">货品</th>
+                                 <th scope="col" class="text-right pr-5">价格</th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+
+                                <td>Youtube</td>
+                                <td>喜优鲜</td>
+                                <td>橙子</td>
+                                <td class="text-right">3000</td>
+                             </tr>
+
+                             <tr>
+
+                                <td>Youtube</td>
+                                <td>喜优鲜</td>
+                                <td>葡萄</td>
+                                <td class="text-right">2000</td>
+                             </tr>
+                             <tr>
+
+                                <td>Youtube</td>
+                                <td>喜优鲜</td>
+                                <td>香蕉</td>
+                                <td class="text-right">1500</td>
+                             </tr>
+                             <tr>
+
+                                <td>Youtube</td>
+                                <td>喜优鲜</td>
+                                <td>苹果</td>
+                                <td class="text-right">2000</td>
+                             </tr>
+                             <tr>
+
+                                <td>Youtube</td>
+                                <td>喜优鲜</td>
+                                <td>芒果</td>
+                                <td class="text-right">2020</td>
+                             </tr>
+                             <tr>
+
+                                <td>Youtube</td>
+                                <td>喜优鲜</td>
+                                <td>草莓</td>
+                                <td class="text-right">2021</td>
+                             </tr>
+                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="text-right">总营收</td>
+                                <td class="text-right">8500</td>
+                             </tr>
+                         </tbody>
+                     </table>
+
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+ 
+ <div class="row mb-4">
+     <section class="col-lg-8">
+         <div class="card rounded-0">
+             <div class="card-header">
+                 用户来源
+             </div>
+             <div class="card-body">
+                 <div class="row">
+                     <div class="col-lg-8">
+                         <canvas id="barCanvas"></canvas>
+                         <!--长条图一定要用anvas标签跟着js-->
+
+                     </div>
+                     <div class="col-lg-4">
+                         <h4>详情</h4>
+                         <p>喜优鲜--我们只供应原生态有机新鲜水果。
+                            全球水果一家店，只卖健康的生活态度。
+                            喜优鲜--专卖全球原生态新鲜水果。
+                            喜欢它的甜，喜欢它的酸，喜欢它们的有机新鲜，喜欢喜优鲜。
+                            汇全球有机果原，享健康精选优鲜。
+                            优品质，又新鲜，最放心的生态选择--喜优鲜。
+                            原生态的有机水果，新鲜绿色质量优，吃每一口都快乐</p>
+                            <h6 class="mt-3">Goole</h6>
+                            <!--请参考路径选取https://getbootstrap.com/docs/4.0/components/progress/-->
+                            <div class="progress">
+                                <div class="progress-bar w-75" role="progressbar"  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                 </div>
+             </div>
+         </div>
+        </div>
+     </section>
+     <section class="col-lg-4">
+         <div class="card h-100">
+             <!--h-100满版-->
+             <div class="card-header">
+                 圆饼图
+             </div>
+             <div class="card-body d-flex align-items-center">
+                 <!--d-flex align-items-center置中对齐-->
+                 <canvas class="chart-item"></canvas>
+                 <!--圆饼图一定要用canvas标签跟着js-->
+             </div>
+         </div>
+     </section>
+ </div>
+
+ <div class="card rounded-0">
+     <div class="card-header">
+         表头
+     </div>
+     <div class="card-body">
+         <div class="d-flex">
+             <div class="form-inline">
+                 <!--加入Inline forms https://getbootstrap.com/docs/4.0/components/forms/-->
+                 <div class="form-group">
+                    <label for="month" class="sr-only"> 月份</label>
+                    <!--sr-only荧幕阅读器才会看到-->
+                    <select name="" id="month" class="form-control form-control-sm">
+                        <option value="9">9月</option>
+                        <option value="10">10月</option>
+                        <option value="11">11月</option>
+                        <option value="12">12月</option>
+                    </select>
+
+
+             </div>
+         </div>
+
+         <div class="ml-auto">
+             <!--Emmet:a.btn.btn-outline-seconder-->
+             <a href="#" class="btn btn-outline-secondary btn-sm">下载报表</a>
+             <a href="#" class="btn btn-outline-secondary btn-sm">订单管理</a>
+         </div>
+
+     </div>
+     <table class="table">
+         <thead>
+             <tr>
+                 <th width=50%>日期</th>
+                 <th>订单数</th>
+                 <th>退货数</th>
+                 <th>出货数</th>
+                 <th width="15%">有问题商品</th>
+                 <th width="150">营业额</th>
+                 <th width="150">净利润</th>
+             </tr>
+         </thead>
+         <tbody>
+             <tr>
+                 <th scope="row">9/1</th>
+                 <td>300</td>
+                 <td>1</td>
+                 <td>250</td>
+                 <td>3</td>
+                 <td class="text-right">256,000</td>
+                 <td class="text-right">168,000</td>
+             </tr>
+             <tr>
+                 <th scope="row">9/2</th>
+                 <td>300</td>
+                 <td>1</td>
+                 <td>250</td>
+                 <td>3</td>
+                 <td class="text-right">256,000</td>
+                 <td class="text-right">168,000</td>
+             </tr>
+             <tr>
+                <th scope="row">9/3</th>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td>
+                <td class="text-right">168,000</td> 
+             </tr>
+             <tr>
+                <th scope="row">9/4</th>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td>
+                <td class="text-right">168,000</td> 
+             </tr>
+             <tr>
+                <th scope="row">9/5</th>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td>
+                <td class="text-right">168,000</td> 
+             </tr>
+             <tr>
+                <th scope="row">9/6</th>
+                <td>300</td>
+                <td>1</td>
+                <td>250</td>
+                <td>3</td>
+                <td class="text-right">256,000</td>
+                <td class="text-right">168,000</td> 
+             </tr>
+         </tbody>
+         <tfoot>
+             <tr>
+                 <td colspan="6" class="text-right">月总营收</td>
+                 <!--colspan="6"-合并6个栏位-->
+                 <td class="text-right">3,750,500</td>
+             </tr>
+             <tr>
+                 <td colspan="6" class="text-right">月纯净利</td>
+                 <td class="text-right">2,140,500</td>
+             </tr>
+         </tfoot>
+     </table>
+ </div>
+ </div>
+
+
+ <footer class="py-3 bg-light">
+     <div class="d-flex">
+         <div class="ml-5">
+             <p>@ Copright 2021 粤台学院</p>
+         </div>
+         <div class="ml-5">
+             <a href="#">Github</a>
+             <a href="#">FaceBook</a>
+             <a href="#">About</a>
+         </div>
+     </div>
+ </footer>
+</body>
+
+
+ <!-- JavaScript -->
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+ integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+ crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/ulg/popper.min.js"
+ integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+ crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+ integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+ crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+
+<script>
+ $(document).ready(function () {
+     $('[data-toggle="tooltip"]').tooltip();
+
+     // 編輯的 Modal 事件
+     $('#editModal').on('show.bs.modal', function (event) {
+         var button = $(event.relatedTarget) // 選則當初觸發事件的按鈕
+         var title = button.data('title') // 使用 data-* 來取得特定內容
+
+         var modal = $(this)
+         modal.find('.modal-title').text(title) // 寫入資料
+     });
+
+     $('#removeModal').on('show.bs.modal', function (event) {
+         var button = $(event.relatedTarget) // 選則當初觸發事件的按鈕
+         var title = button.data('title') // 使用 data-* 來取得特定內容
+
+         var modal = $(this)
+         modal.find('.modal-title').text('確認' + title) // 寫入資料
+     })
+ });
+</script>
+<script>
+ window.chartColors = {
+     red: 'rgb(255, 99, 132)',
+     orange: 'rgb(255, 159, 64)',
+     yellow: 'rgb(255, 205, 86)',
+     green: 'rgb(75, 192, 192)',
+     blue: 'rgb(54, 162, 235)',
+     purple: 'rgb(153, 102, 255)',
+     grey: 'rgb(201, 203, 207)'
+ };
+
+ var randomScalingFactor = function () {
+     return Math.round(Math.random() * 100);
+ };
+
+ var config = {
+     type: 'pie',
+     data: {
+         datasets: [{
+             data: [
+                 randomScalingFactor(),
+                 randomScalingFactor(),
+                 randomScalingFactor(),
+                 randomScalingFactor(),
+                 randomScalingFactor(),
+             ],
+             backgroundColor: [
+                 window.chartColors.red,
+                 window.chartColors.orange,
+                 window.chartColors.yellow,
+                 window.chartColors.green,
+                 window.chartColors.blue,
+             ],
+             label: 'Dataset 1'
+         }],
+         labels: [
+             "橙子",
+             "葡萄",
+             "香蕉",
+             "苹果",
+             "芒果"
+         ]
+     },
+     options: {
+         responsive: true
+     }
+ };
+
+ // bar
+ var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+ var colors = Chart.helpers.color;
+ var barChartData = {
+     labels: ["January", "February", "March", "April", "May", "June", "July"],
+     datasets: [{
+         label: 'Dataset 1',
+         backgroundColor: colors(window.chartColors.red).alpha(0.5).rgbString(),
+         borderColor: window.chartColors.red,
+         borderWidth: 1,
+         data: [
+             randomScalingFactor(),
+             randomScalingFactor(),
+             randomScalingFactor(),
+             randomScalingFactor(),
+             randomScalingFactor(),
+             randomScalingFactor(),
+             randomScalingFactor()
+         ]
+     }, {
+         label: 'Dataset 2',
+         backgroundColor: colors(window.chartColors.blue).alpha(0.5).rgbString(),
+         borderColor: window.chartColors.blue,
+         borderWidth: 1,
+         data: [
+             randomScalingFactor(),
+             randomScalingFactor(),
+             randomScalingFactor(),
+             randomScalingFactor(),
+             randomScalingFactor(),
+             randomScalingFactor(),
+             randomScalingFactor()
+         ]
+     }]
+
+ };
+
+ window.onload = function () {
+     // pie
+     document.querySelectorAll('.chart-item').forEach(function (item) {
+         config.data.datasets.forEach(function (dataset) {
+             dataset.data = dataset.data.map(function () {
+                 return randomScalingFactor();
+             });
+         });
+         var ctx = item.getContext("2d");
+         window.myPie = new Chart(ctx, config);
+     })
+
+     // bar
+     var barCtx = document.getElementById("barCanvas").getContext("2d");
+     window.myBar = new Chart(barCtx, {
+         type: 'bar',
+         data: barChartData,
+         options: {
+             responsive: true,
+             legend: {
+                 position: 'top',
+             },
+             title: {
+                 display: true,
+                 text: 'Chart.js Bar Chart'
+             }
+         }
+     });
+
+ };
+</script> 
+</html>
+
+
+
+
+

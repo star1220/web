@@ -1,0 +1,9 @@
+html{
+    font-size: 12px;
+}
+.navbar-var a{
+    color: grey;
+}
+.navbar-var a:hover{
+    color: yellow;
+}

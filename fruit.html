@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <!--设置视口
+通过 <meta> 标签来控制视口。
+initial-scale=1.0">
+它为浏览器提供了关于如何控制页面尺寸和缩放比例的指令。
+width=device-width 部分将页面的宽度设置为跟随设备的屏幕宽度（视设备而定）。
+当浏览器首次加载页面时，initial-scale=1.0 部分设置初始缩放级别。-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Ninom</title>
+
+
+  <!-- bootstrap core css -->
+<!--调用一个外部的CSS样式文件。通过<link/>这个标签来调用外部的"css/bootstrap.css样式文件-->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- 此模板的自定义样式 -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style响应式 -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <div class="brand_box">
+      <a class="navbar-brand" href="index.html">
+        <span>
+          Ninom
+        </span>
+      </a>
+    </div>
+    <!-- end header section -->
+  </div>
+
+  <!-- nav section -->
+
+  <section class="nav_section">
+    <div class="container">
+      <div class="custom_nav2">
+        <!--Navbar 导航链接建立在我们的. nav 选项上，带有它们自己的修饰符类，并且需要使用 toggler 类来进行适当的响应样式。导航栏中的导航也将增加占用尽可能多的水平空间，以保持导航栏内容安全对齐。
+active 状态（带有. active ）表示当前页面可以直接应用于. nav - links 或它们的直接父类. navs - items 。-->
+<!--使用了bootstrap里的nav https://getbootstrap.com/docs/4.0/components/navbar/?-->
+        <nav class="navbar navbar-expand custom_nav-container ">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex  flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="fruit.html">Our Fruit </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Login</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- end nav section -->
+
+  <!-- fruit section -->
+
+  <section class="fruit_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <hr>
+        <h2>
+          Fresh Fruit
+        </h2>
+      </div>
+    </div>
+    <div class="container-fluid">
+
+      <div class="fruit_container">
+        <div class="box">
+          <img src="images/f-1.jpg" alt="">
+          <div class="link_box">
+            <h5>
+              Orange
+            </h5>
+            <a href="">
+              Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/f-2.jpg" alt="">
+          <div class="link_box">
+            <h5>
+              Blueberry
+            </h5>
+            <a href="">
+              Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/f-3.jpg" alt="">
+          <div class="link_box">
+            <h5>
+              Banana
+            </h5>
+            <a href="">
+              Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/f-4.jpg" alt="">
+          <div class="link_box">
+            <h5>
+              Apple
+            </h5>
+            <a href="">
+              Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/f-5.jpg" alt="">
+          <div class="link_box">
+            <h5>
+              Mango
+            </h5>
+            <a href="">
+              Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/f-6.jpg" alt="">
+          <div class="link_box">
+            <h5>
+              Strawberry
+            </h5>
+            <a href="">
+              Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end fruit section -->
+
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding">
+    <!--使用row必须用container包起来-->
+    <div class="container">
+      <div class="info_logo">
+        <h2>
+          NiNom
+        </h2>
+      </div>
+      <div class="info_contact">
+        <div class="row">
+          <!--三栏式排版12/3=4 col-md-4-->
+          <div class="col-md-4">
+            <a href="">
+              <img src="images/location.png" alt="">
+              <span>
+                Passages of Lorem Ipsum available
+              </span>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="">
+              <img src="images/call.png" alt="">
+              <span>
+                Call : +012334567890
+              </span>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="">
+              <img src="images/mail.png" alt="">
+              <span>
+                @ Copright 2021 粤台学院
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-lg-9">
+          <div class="info_form">
+            <form action="">
+              <input type="text" placeholder="Enter your email">
+              <button>
+                subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="info_social">
+            <div>
+              <a href="">
+                <img src="images/facebook-logo-button.png" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="images/twitter-logo-button.png" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="images/linkedin.png" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="images/instagram.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      &copy; <span id="displayYear"></span> All Rights Reserved By
+      <a href="https://www.11moban.com/">@ Copright 2021 粤台学院</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+
+ 
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+
+</html>
